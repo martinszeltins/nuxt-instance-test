@@ -4,7 +4,7 @@ export const useSettings = async () => {
     const { data: localizationSettings } = await useFetch('/api/localization/settings')
 
     if (appSettings.value) {
-        appSettings.value.devtools.enabled = true
+        appSettings.value.devtools.enabled = false
     }
 
     return {
